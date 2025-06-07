@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Home | Shred Video</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="imagetoolbar" content="no">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/png" href="favicon-bg.png">
+
+	<!-- if a user has an RSS feed, use this -->
+	<link rel="alternate" type="application/rss+xml" title="Shred Video Feed" href="/feed/">
+
+	<link rel="stylesheet" type="text/css" href="/css/main.css?v=1.5">
+	<link rel='stylesheet' type='text/css' href='/css/compatibility.css' />
+	<!--[if IE 9]><link rel="stylesheet" type="text/css" href="/css/ie9.css"><![endif]-->
+	<link href="https://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+
+	<!-- Temporary -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Schema and SEO -->
+	<meta itemprop="name" content="Shred Video">
+	<meta itemprop="image" content="social-image.png">
+	<meta name="description" content="Shred Video allows you to create and sell cinematic, shareable videos to your customers with no work at all.">
+	<meta name="keywords" content="Shred, Video">
+
+	<!-- Social Platforms -->
+	<meta property="og:title" content="Automated Video for Adventure Tours">
+	<meta property="og:description" content="Request A Demo">
+	<meta property="og:site_url" content="https://shredvideo.com">
+	<meta property="og:image" content="https://shredvideo.com/img/fb.jpg">
+	<meta property="fb:app_id" content="838245349586414">
+	<meta property="twitter:title" content="Automated Video for Adventure Tours">
+	<meta property="twitter:description" content="Request A Demo">
+	<meta property="twitter:url" content="https://shredvideo.com">
+
+	<!-- For Chrome web store, if you need this. -->
+	<link rel="manifest" href="/manifest.json">
+
+	<!-- For iOS, so it makes pin to home screen look nice. -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="application-name" content="Shred Video">
+	<meta name="apple-mobile-web-app-title" content="Shred Video">
+
+
+	<!-- Typekit -->
+	<script src="https://use.typekit.net/bmt1lnj.js"></script>
+	<script>try{Typekit.load({ async: false });}catch(e){}</script>
+</head>
+
+<body class="home">
+
+	<header role="banner">
+		<div class="container">
+			<div class="column">
+				<a class="logo" href="index.html">
+				<svg version="1.1"
+					 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+					 x="0px" y="0px" width="98.6px" height="85px" viewBox="0 0 98.6 85" style="enable-background:new 0 0 98.6 85;"
+					 xml:space="preserve">
+				<defs>
+				</defs>
+				<path id="type-triangle" class="type-triangle" d="M10.6,69.9c-1.8-0.8-3-1.8-3-2.8s0.9-1.3,2.3-1.3c1.2,0,2.4,0.2,3.6,0.5c0.9,0.2,1.4,0,1.5-0.8
+					l0.5-3.2c0.1-0.8-0.2-1.1-0.9-1.5c-1.8-0.6-3.7-1-5.6-0.9c-5.6,0-8.4,2-8.4,7c0,4.8,2.8,6.6,5.8,8c2.3,1.2,3.1,1.7,3.1,2.6
+					c0,1.2-1.3,1.5-3,1.5c-1.3,0-2.6-0.2-3.9-0.7c-1-0.3-1.4,0-1.5,0.8l-0.5,3.3c-0.2,0.9,0.2,1.1,0.9,1.5C3.5,84.6,5.8,85,8,85
+					c4.5,0,8.6-2,8.5-7.3C16.6,73.3,14.1,71.8,10.6,69.9z M36,60.2h-4.5c-0.1,0-0.2,0-0.4,0c-0.5,0.1-0.9,0.6-0.8,1.2v7.7h-4.2v-7.7
+					c0-0.1,0-0.2,0-0.4c-0.1-0.5-0.6-0.9-1.2-0.8h-4.6c-0.1,0-0.3,0-0.4,0c-0.5,0.1-0.9,0.6-0.8,1.2v22c0,0.1,0,0.2,0,0.4
+					c0.1,0.5,0.6,0.9,1.2,0.8H25c0.1,0,0.2,0,0.4,0c0.5-0.1,0.9-0.6,0.8-1.2v-8.1h4.2v8.1c0,0.1,0,0.2,0,0.4c0.1,0.5,0.6,0.9,1.2,0.8H36
+					c0.1,0,0.2,0,0.4,0c0.5-0.1,0.9-0.6,0.8-1.2v-22c0-0.1,0-0.2,0-0.4C37.1,60.5,36.6,60.1,36,60.2z M59,69c0-6.6-3.1-8.7-9.5-8.7
+					l-7.4,0c-0.1,0-0.2,0-0.4,0c-0.5,0.1-0.9,0.6-0.8,1.2v22c0,0.1,0,0.2,0,0.4c0.1,0.5,0.6,0.9,1.2,0.8h4.5c0.1,0,0.2,0,0.4,0
+					c0.5-0.1,0.9-0.6,0.8-1.2v-6h1l3,6.2c0.3,0.6,0.9,1,1.6,0.9H58c0.9,0,1.1-0.7,0.7-1.4l-3.6-6.9C57.5,75.2,59,72.9,59,69z M49.4,71.9
+					L49.4,71.9l-1.6-0.1v-5.6h1.6c2,0,2.6,0.7,2.6,2.8C52,71.1,51.4,71.9,49.4,71.9z M76,78.7h-7.1v-3.6h6.4c0.1,0,0.2,0,0.4,0
+					c0.5-0.1,0.9-0.6,0.8-1.2v-3.4c0-0.1,0-0.2,0-0.4c-0.1-0.5-0.6-0.9-1.2-0.8h-6.5v-3.1h7c0.1,0,0.2,0,0.4,0c0.5-0.1,0.9-0.6,0.8-1.2
+					v-3.6c0-0.1,0-0.2,0-0.4c-0.1-0.5-0.6-0.9-1.2-0.8H63.2c-0.1,0-0.2,0-0.4,0c-0.5,0.1-0.9,0.6-0.8,1.2v22c0,0.1,0,0.2,0,0.4
+					c0.1,0.5,0.6,0.9,1.2,0.8H76c0.1,0,0.2,0,0.4,0c0.5-0.1,0.9-0.6,0.8-1.2v-3.6c0-0.1,0-0.2,0-0.4C77.1,78.9,76.5,78.6,76,78.7z
+					 M88.2,60.3h-6.7c-0.1,0-0.2,0-0.4,0c-0.5,0.1-0.9,0.6-0.8,1.2v22c0,0.1,0,0.2,0,0.4c0.1,0.5,0.6,0.9,1.2,0.8v0h6.7
+					c7.1,0,10.4-3.1,10.4-12.1C98.6,63.4,95.3,60.3,88.2,60.3z M88.1,78.6h-0.8V66.4H88c2.5,0,3.6,1.1,3.6,6.1
+					C91.6,77.5,90.6,78.6,88.1,78.6z M96.2,0L74.9,12.3v42.9h21.2V0z M69.4,15.4L0.7,55.2h68.9L69.4,15.4z"/>
+				<path id="smalltriangle" class="smalltriangle" d="M27.4,32.1L0,14.9v33L27.4,32.1z"/>
+				</svg>
+
+				Shred Video</a>
+
+				<div class="nav-container">
+					<nav class="primary-nav" role="navigation">
+						<ul id="menu-primary-navigation" class="nav navbar-nav">
+							<li class="menu-features"><a href="#features">Features</a></li>
+							<li class="menu-partners"><a href="#partners">Partners</a></li>
+							<li class="menu-about"><a href="about.html">About</a></li>
+							<li class="menu-faq"><a href="faq.html">FAQ</a></li>
+						</ul>
+					</nav>
+					<a class="button hollow with-arrow" href="/demo.html">Request A Demo</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<!-- The Content -->
+
+
+
+
+
+	<article class="full">
+
+
+		<div class="full section-home-hero text-center">
+		<div class="content-full">
+			<div class="video-responsive">
+				<video preload="auto" loop="true" muted="true" autoplay="true" playsinline background=1 poster="/img/poster-img.jpg">
+				<source src="/video/home_hero_bg_new.mp4" type="video/mp4">
+				<!-- <source src="/video/home_hero-bg.mp4" type="video/mp4"> -->
+				</video>
+
+		 <div class="section-home-hero-text-wrapper">
+			<div class="section-home-hero-text-wrapper-inner">
+				<h1>Automated Video<br>for Adventure Tours</h1>
+				<a class="button with-arrow ios-app" href="/skydive.html">Watch The Video</a>
+			</div><!-- section-home-hero-text-wrapper-inner -->
+			</div> <!-- section-home-hero-text-wrapper -->
+			</div> <!-- video-responsive -->
+
+		</div><!--content-->
+		</div> <!--full-->
+
+	<section class="section gray-box">
+			<div class="container justify-center">
+				<div class="column eight text-center">
+					<h2 class="red"><strong>Sell Videos to Your Customers</strong></h2>
+					<p>Shred Video helps you create and sell cinematic, shareable videos to your customers effortlessly.</p>
+				</div>
+			</div>
+		</section>
+
+<div class="content">
+		<section class="feature" id="features"><a name="#features"></a>
+			<div class="flex-item-100">
+				<h2><span><strong>Shred Features</strong></span></h2>
+			</div><!-- flex-item-100 -->
+
+			<div class="flex-container_row-space-between-stretch">
+				<div class="flex-item-30">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.88 73.09">
+					  <g data-name="Layer 2">
+					    <path class="bargraph" d="M42.42 71.59v-49m20.46 49V2.12m-7.53 7.53l7.53-7.53 7.53 7.53M21.96 71.59V41.45m30.69 30.14V13.02M32.19 71.59V31.51m42.69 40.08H1.5V.17m0 9.48h10.23M1.5 19.97h10.23M1.5 30.3h10.23M1.5 40.62h10.23M1.5 50.94h10.23M1.5 61.26h10.23" fill="none" stroke="#d81f32" stroke-miterlimit="10" stroke-width="3" data-name="Layer 1"/>
+					  </g>
+					</svg>
+
+					<h4>Increase Revenue</h4>
+					<p><strong>Drive more revenue</strong> selling your customers cinema quality videos (and photos) of their tour or activity.</p>
+				</div><!-- flex-item-30 -->
+
+				<div class="flex-item-30">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.75 90.93">
+					  <defs>
+					    <style>
+					      .stopwatch{fill:none;stroke:#d81f32;stroke-miterlimit:10;stroke-width:3px}
+					    </style>
+					  </defs>
+					  <g id="Layer_2" data-name="Layer 2">
+					    <g id="Layer_1-2" data-name="Layer 1">
+					      <path class="stopwatch" d="M65.82 53.55H37.38"/>
+					      <circle class="stopwatch" cx="37.38" cy="53.55" r="35.88"/>
+					      <path class="stopwatch" d="M37.38 17.68V9.43M27.84 1.5h19.07v7.93H27.84z"/>
+					      <circle class="stopwatch" cx="37.38" cy="53.55" r="7.9"/>
+					      <path class="stopwatch" d="M37.38 25.11v9.58m-14.23-5.77l4.79 8.3m-15.2 2.11l8.3 4.79M8.93 53.55h9.58m-5.77 14.23l8.3-4.79m2.11 15.2l4.79-8.3M37.38 82v-9.58m14.22 5.77l-4.79-8.3m15.2-2.11l-8.3-4.79m8.3-23.66l-8.3 4.79m-2.11-15.2l-4.79 8.3"/>
+					      <circle class="stopwatch" cx="37.38" cy="53.55" r="28.44"/>
+					      <path class="stopwatch" transform="rotate(45 65.405 25.531)" d="M61.28 21.76h8.25v7.53h-8.25z"/>
+					      <path class="stopwatch" transform="rotate(135 9.343 25.527)" d="M5.22 21.76h8.25v7.53H5.22z"/>
+					    </g>
+					  </g>
+					</svg>
+
+					<h4>Deliver Instantly</h4>
+					<p>Your customers get their videos and photos immediately at the conclusion of their activity with <strong>zero wait time</strong>.</p>
+				</div><!-- flex-item-30 -->
+
+				<div class="flex-item-30">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 74.02">
+					  <defs>
+					    <style>
+					      .camera{fill:none;stroke:#d81f32;stroke-miterlimit:10;stroke-width:3px}
+					    </style>
+					  </defs>
+					  <g id="Layer_2" data-name="Layer 2">
+					    <g id="Layer_1-2" data-name="Layer 1">
+					      <path class="camera" d="M63.43 11.31L57.7 5.59m15.9 5.72l5.72-5.72m-10.81 5.72V0M85.5 72.52V27.27a3.4 3.4 0 0 0-3.4-3.4H4.89a3.4 3.4 0 0 0-3.39 3.4v45.25z"/>
+					      <circle class="camera" cx="52" cy="47.77" r="17.11"/>
+					      <circle class="camera" cx="52" cy="47.77" r="9.85"/>
+					      <path class="camera" transform="rotate(-180 68.51 20.53)" d="M60.31 17.19h16.4v6.69h-16.4z"/>
+					      <path class="camera" transform="rotate(-180 14.845 20.725)" d="M10.33 17.58h9.02v6.29h-9.02z"/>
+					      <path class="camera" d="M1.5 31.73h14.63v5.62H1.5zm83.69 27.13h-5.94v7.32h6.25M8.65 64.61H30"/>
+					    </g>
+					  </g>
+					</svg>
+
+
+					<h4>Save Time &amp; Money</h4>
+					<p>Shred Video requires <strong>no dedicated staff</strong> to operate. If you already have a photographer or videographer on staff, even better &mdash; we’ll turn them into a photo &amp; video superhero. Like Tony Stark with a camera.</p>
+				</div><!-- flex-item-30 -->
+
+				<div class="flex-item-30">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.72 92.44">
+					  <defs>
+					    <style>
+					      .phone{fill:none;stroke:#d81f32;stroke-miterlimit:10;stroke-width:3px}
+					    </style>
+					  </defs>
+					  <g id="Layer_2" data-name="Layer 2">
+					    <g id="Layer_1-2" data-name="Layer 1">
+					      <path class="phone" d="M18.14 55.16V37.31l16.24 8.62-16.24 9.23z"/>
+					      <rect class="phone" x="1.5" y="1.5" width="47.72" height="89.44" rx="9.14" ry="9.14"/>
+					      <path class="phone" d="M1.5 14.02h47.72M1.5 76.09h47.72"/>
+					      <circle class="phone" cx="25.36" cy="83.58" r=".91"/>
+					      <path class="phone" d="M19.42 7.23H31.3"/>
+					    </g>
+					  </g>
+					</svg>
+
+					<h4>Theatre + Touchscreen Display</h4>
+					<p>We’ll set up theatre and touchscreen displays so your customers can watch their videos in <strong>full cinematic glory</strong>, as well as interact directly with their media on personal touchscreens.</p>
+				</div><!-- flex-item-30 -->
+
+				<div class="flex-item-30">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.03 94.7">
+					  <defs>
+					    <style>
+					      .cloud{fill:none;stroke:#d81f32;stroke-miterlimit:10;stroke-width:3px}
+					    </style>
+					  </defs>
+					  <g id="Layer_2" data-name="Layer 2">
+					    <g id="Layer_1-2" data-name="Layer 1">
+					      <path class="cloud" d="M40.71 59.36v16h-7.18l7 8.48 7 8.5 7-8.5 7-8.48h-7.2V53H74.7a18.81 18.81 0 1 0-6.33-36.52 25.76 25.76 0 0 0-48.61 5.35 15.34 15.34 0 0 0-2.56-.21 15.69 15.69 0 1 0 0 31.38h30.13"/>
+					      <path class="cloud" d="M8.66 59.49v15.84H3.67l4.87 5.89 4.86 5.91 4.85-5.91 4.87-5.89h-4.98V59.49m59.25 0v15.84h-5l4.87 5.89 4.86 5.91 4.85-5.91 4.87-5.89h-4.98V59.49M61.4 20.92a18.68 18.68 0 0 1 7-4.4"/>
+					    </g>
+					  </g>
+					</svg>
+
+					<h4>Cloud Delivery</h4>
+					<p>No more hassling with USB sticks for you or your customers. Shred Video delivers media via the cloud, so your customers can immediately <strong>view and share right from their phones</strong>.</p>
+				</div><!-- flex-item-30 -->
+
+				<div class="flex-item-30">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.33 98.21">
+					  <defs>
+					    <style>
+					      .social{fill:none;stroke:#d81f32;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px}.cls-2{fill:#d81f31}
+					    </style>
+					  </defs>
+					  <g id="Layer_2" data-name="Layer 2">
+					    <g id="Layer_1-2" data-name="Layer 1">
+					      <path class="social" d="M72.73 36.8a35.31 35.31 0 0 1-53 30.58l-6.51 1.74-11.14 3L5.11 61l1.74-6.51A35.31 35.31 0 1 1 72.73 36.8zm-5.07 40.52a18.78 18.78 0 0 0 28.16 16.26l3.46.92 5.92 1.59-1.58-5.92-.93-3.47a18.77 18.77 0 1 0-35-9.38z"/>
+					      <circle class="social" cx="37.43" cy="36.8" r="18.18"/>
+					      <path class="social" d="M28.42 40a9.23 9.23 0 0 0 18 0z"/>
+					      <circle class="social" cx="29.48" cy="33.19" r="2.67"/>
+					      <circle class="social" cx="45.38" cy="33.19" r="2.67"/>
+					      <circle class="social" cx="86.43" cy="77.32" r="2.67"/>
+					      <circle class="social" cx="77.93" cy="77.32" r="2.67"/>
+					      <circle class="social" cx="95.31" cy="77.32" r="2.67"/>
+					    </g>
+					  </g>
+					</svg>
+
+					<h4>Social Media Sharing</h4>
+					<p>We deliver customer videos + photos via a web experience designed and branded just for you, <strong>easily shareable on social media</strong>.</p>
+				</div><!-- flex-item-30 -->
+
+				<div class="flex-item-30">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.14 84.14">
+					  <defs>
+					    <style>
+					      .screwdriver{fill:none;stroke:#d81f32;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px}
+					    </style>
+					  </defs>
+					  <g id="Layer_2" data-name="Layer 2">
+					    <g id="Layer_1-2" data-name="Layer 1">
+					      <path class="screwdriver" d="M54.59 45.65l-16.1-16.1L65.62 2.42a3.14 3.14 0 0 1 4.45 0l11.65 11.65a3.14 3.14 0 0 1 0 4.45zM68 10.72L43.83 34.89m29.59-18.75L49.25 40.31"/>
+					      <path class="screwdriver" d="M39.65 49.91l4.51 4.51 3.52-3.52c-1.92-3.16-1.11-7.91 1.57-10.59m-15.02 4.18L29.72 40l3.52-3.52c3.16 1.92 7.91 1.11 10.59-1.57"/>
+					      <path class="screwdriver" d="M7.32 82.24L1.9 76.82l6.39-10.28h.05a17.39 17.39 0 0 0 8.54-4.69l17.35-17.36 5.42 5.42L22.3 67.26a17.39 17.39 0 0 0-4.69 8.54z"/>
+					    </g>
+					  </g>
+					</svg>
+
+					<h4>Custom Integration</h4>
+					<p>Our system is <strong>customized to your operation</strong>, so you get the best experience for your staff and customers.</p>
+				</div><!-- flex-item-30 -->
+
+				<div class="flex-item-30">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.14 86.22">
+					  <defs>
+					    <style>
+					      .shield{fill:none;stroke:#d81f32;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px}
+					    </style>
+					  </defs>
+					  <g id="Layer_2" data-name="Layer 2">
+					    <g id="Layer_1-2" data-name="Layer 1">
+					      <path class="shield" d="M55.06 33.8v11.75H40.45v14.62H28.69V45.55H14.07V33.8h14.62V19.17h11.76V33.8h14.61z"/>
+					      <path class="shield" d="M50.44 74.54l-15.87 9.91-15.87-9.91a36.56 36.56 0 0 1-17.2-31V10.23s15-8.73 33.07-8.73 33.07 8.73 33.07 8.73v33.3a36.56 36.56 0 0 1-17.2 31.01z"/>
+					    </g>
+					  </g>
+					</svg>
+
+					<h4>Ongoing Support</h4>
+					<p>Our support team will make sure you’re never left high and dry or without a paddle.</p>
+				</div><!-- flex-item-30 -->
+
+				<div class="flex-item-30">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.95 79.72">
+					  <defs>
+					    <style>
+					      .gears{fill:none;stroke:#d81f32;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px}
+					    </style>
+					  </defs>
+					  <g id="Layer_2" data-name="Layer 2">
+					    <g id="Layer_1-2" data-name="Layer 1">
+					      <circle class="gears" cx="77.94" cy="34" r="11.99"/>
+					      <path class="gears" d="M52.86 40.92a25.13 25.13 0 0 0 2.45 5.93l-4.69 5.79 8.68 8.69 5.79-4.69A26.18 26.18 0 0 0 71 59.09l.78 7.41h12.3l.78-7.41a26.18 26.18 0 0 0 5.93-2.45l5.79 4.69 8.69-8.69-4.69-5.79a26 26 0 0 0 2.42-5.93l7.42-.78V27.86l-7.42-.78a26.38 26.38 0 0 0-2.45-5.92l4.69-5.8-8.66-8.69-5.8 4.7a25.48 25.48 0 0 0-5.92-2.45l-.78-7.42H71.8L71 8.92a25.48 25.48 0 0 0-5.92 2.45l-5.8-4.7-8.68 8.69 4.69 5.8a25.23 25.23 0 0 0-2.45 5.92l-7.42.78v12.28z"/>
+					      <circle class="gears" cx="22.56" cy="57.17" r="7.64"/>
+					      <path class="gears" d="M12.28 44.16a16.12 16.12 0 0 0-2.87 2.91l-4.57-1.32L1.9 53l4.19 2.24a16.39 16.39 0 0 0 0 4.08L2 61.62l3 7.21 4.54-1.38a17.17 17.17 0 0 0 2.91 2.87l-1.32 4.56 7.26 2.94 2.23-4.19a16 16 0 0 0 4.09 0L27 77.76l7.21-3-1.38-4.55a16.46 16.46 0 0 0 2.87-2.91l4.56 1.32 2.95-7.25L39 59.09A15.93 15.93 0 0 0 39 55l4.16-2.3-3-7.21-4.55 1.38A16.35 16.35 0 0 0 32.66 44L34 39.45l-7.25-2.94-2.27 4.19a16.4 16.4 0 0 0-4.08 0l-2.3-4.16-7.21 3z"/>
+					    </g>
+					  </g>
+					</svg>
+
+					<h4>Continuous Improvement</h4>
+					<p>We’re constantly pushing system <strong>upgrades that you’ll get for free</strong>.</p>
+				</div><!-- flex-item-30 -->
+			</div>
+		</section>
+</div>
+
+
+
+<div class="content">
+		<div class="flex-container_row-space-between-stretch">
+
+
+
+				</div>
+			</section>
+
+
+			<section class="try-for-free">
+				<div class="container text-center justify-center">
+					<div class="column seven">
+						<h2>Try for Free</h2>
+						<p>We’ll let you see Shred Video live before you pay us a dime. Take 10 seconds to <strong>sign up for a free demo now</strong>.</p>
+						<a class="button with-arrow" href="/demo.html" target="_blank">Request A Demo</a>
+					</div>
+				</div>
+			</div>
+		</section>
+</div>
+
+		<section class="section gray-box">
+			<div class="container justify-center">
+				<div class="column eight">
+					<h3 class="red"><strong>Shred Video’s automated video &amp; photo systems work for any adventure tour or activity.</strong></h3>
+					<p>We use LiDar, GPS, smart camera technology, and proprietary algorithms to automatically capture, edit, and share cinematic videos &amp; photos to your customers. Think of it like the technology of self-driving cars applied to adventure activity videos, with the cinematic flair you’d expect from Red Bull Media House.</p>
+
+					<p>We currently serve skydiving, bungy jumping, giant swing, river rafting, paragliding, and many other tours and activities. <strong>Check out our partner sites below</strong> to see us in action with current clients, and <a href="/demo.html"><strong>sign up for a free demo now</strong></a> to see Shred Video work for you.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners" id="partners"><a name="#partners"></a>
+				<div class="container justify-center text-center">
+						<div class="column eight">
+								<h2 class="red"><strong>Shred Partners</strong></h2>
+								<p>Check out these solutions in operation at our partner sites. Each of the below movies are of actual customers, delivered within 55 seconds of their dive, jump, paddle, or flight.</p>
+						</div>
+				</div>
+		</section>
+		<section class="partners-examples">
+				<div class="container justify-center">
+						<div class="column seven">
+								<h3 class="red">Skydive Utah</h3>
+								<h5>Tooele, Utah</h5>
+								<p>Algorithms automatically produce 4 unique videos for each customer, delivered within seconds of landing and perfect for sharing on social media.</p>
+						</div>
+						<div class="column five">
+								<p><em>“Every minute counts at our drop zone and Shred has been a huge time saver. It's super simple to use. Our customers are stoked on the 4 different edits including short cuts for social media. Shred has re-designed and modernized the typical tandem video which was a much needed upgrade for our business.”</em></p>
+								<h5><span class="red">MIKE CHAPMAN</span>, CO-OWNER</h5>
+						</div>
+				</div>
+				<div class="container video-list one-half justify-center">
+						<div class="column">
+								<div class="section-video-player">
+										<video id="video-js-video-sdu1" class="video-js vjs-default-skin vjs-big-play-centered vjs-big-play-button" controls preload="auto" data-setup='{"fluid": true}' poster="https://d31fuxj8mc858j.cloudfront.net/SDU_xtra_Insta.jpg" width="1280px" height="720px">
+											  <source src="https://stream.mux.com/9OQu7yLN7fsrF3vAOljdyBSOEvXuAqbR.m3u8" type='application/x-mpegURL'>
+											  <source src="https://d31fuxj8mc858j.cloudfront.net/SDU_xtra_Insta.mp4" type='video/mp4'>
+										</video>
+								</div>
+								<!-- section-video-player -->
+								<div class="video-meta-info">
+										<div class="video-bottom-info">
+												<p class="video-title">Skydive Insta Movie</p>
+										</div>
+								</div>
+						</div>
+						<div class="column">
+								<div class="section-video-player">
+										<video id="video-js-video-sdu2" class="video-js vjs-default-skin vjs-big-play-centered vjs-big-play-button" controls preload="auto" data-setup='{"fluid": true}' poster="https://d31fuxj8mc858j.cloudfront.net/SDU_201708261318_Jump.jpg" width="1280px" height="720px">
+												<source src="https://stream.mux.com/9Cir2GjP02DHkqMqU9Iqyz01jyEDb02w7go.m3u8" type='application/x-mpegURL'>
+												<source src="https://d31fuxj8mc858j.cloudfront.net/SDU_201708261318_Jump.mp4" type='video/mp4'>
+										</video>
+								</div>
+								<!-- section-video-player -->
+								<div class="video-meta-info">
+										<div class="video-bottom-info">
+												<p class="video-title">Skydive Jump Movie</p>
+										</div>
+								</div>
+						</div>
+						<div class="column">
+								<div class="section-video-player">
+										<video id="video-js-video-sdu3" class="video-js vjs-default-skin vjs-big-play-centered vjs-big-play-button" controls preload="auto" data-setup='{"fluid": true}' poster="https://d31fuxj8mc858j.cloudfront.net/SDU_201708251600_Mini.jpg" width="1280px" height="720px">
+												<source src="https://stream.mux.com/C9O00uf00znmg1MFcQfIPaFcM3biihBazP.m3u8" type='application/x-mpegURL'>
+												<source src="https://d31fuxj8mc858j.cloudfront.net/SDU_201708251600_Mini.mp4" type='video/mp4'>
+										</video>
+								</div>
+								<!-- section-video-player -->
+								<div class="video-meta-info">
+										<div class="video-bottom-info">
+												<p class="video-title">Skydive Mini Movie</p>
+										</div>
+								</div>
+						</div>
+						<div class="column">
+								<div class="section-video-player">
+										<video id="video-js-video-sdu4" class="video-js vjs-default-skin vjs-big-play-centered vjs-big-play-button" controls preload="auto" data-setup='{"fluid": true}' poster="https://d31fuxj8mc858j.cloudfront.net/SDU_201708201537_Full.jpg" width="1280px" height="720px">
+												<source src="https://stream.mux.com/rZXJ1oAp00nQyDVp01MY800iCJXVrWpgsBv.m3u8" type='application/x-mpegURL'>
+												<source src="https://d31fuxj8mc858j.cloudfront.net/SDU_201708201537_Full.mp4" type='video/mp4'>
+										</video>
+								</div>
+								<!-- section-video-player -->
+								<div class="video-meta-info">
+										<div class="video-bottom-info">
+												<p class="video-title">Skydive Full Movie</p>
+										</div>
+								</div>
+						</div>
+				</div>
+		</section>
+		<section class="partners-examples">
+				<div class="container justify-center">
+						<div class="column seven">
+								<h3 class="red">AJ Hackett Cairns + Sentosa</h3>
+								<h5>Cairns, Australia &amp; Sentosa, Singapore</h5>
+								<p>Smart cameras + LiDar sensors track the customer through their bungy jump. Algorithms compose the videos within 1 minute of the customer touching ground.</p>
+						</div>
+						<div class="column five">
+								<p><em>“Shred Video is bloody fantastic. We did ok recording and selling videos ourselves; since implementing Shred we make better videos than ever with fewer staff! Our sales have ballooned, social media activity has shot up, and staff is free to focus on customer service. I can’t imagine going back to the old ways.”</em></p>
+								<h5><span class="red">LUKE JOHNSON</span>, General Manager</h5>
+						</div>
+				</div>
+				<div class="container video-list one-half roomy justify-center">
+						<div class="column">
+								<div class="section-video-player">
+										<video id="video-js-video-ajh1" class="video-js vjs-default-skin vjs-big-play-centered vjs-big-play-button" controls preload="auto" data-setup='{"fluid": true}' poster="https://d31fuxj8mc858j.cloudfront.net/ajhs_lalelle.jpg" width="1280px" height="720px">
+												<source src="https://stream.mux.com/Xq8cI81qwEQM02YJFBL5gDDT7WnKp0201yM.m3u8" type='application/x-mpegURL'>
+												<source src="https://d31fuxj8mc858j.cloudfront.net/ajhs_lalelle.mp4" type='video/mp4'>
+										</video>
+								</div>
+								<!-- section-video-player -->
+								<div class="video-meta-info">
+										<div class="video-bottom-info">
+												<p class="video-title">Singapore Backdive</p>
+										</div>
+								</div>
+						</div>
+						<div class="column">
+								<div class="section-video-player">
+										<video id="video-js-video-ajh2" class="video-js vjs-default-skin vjs-big-play-centered vjs-big-play-button" controls preload="auto" data-setup='{"fluid": true}' poster="https://d31fuxj8mc858j.cloudfront.net/ajhs_wet.jpg" width="1280px" height="720px">
+												<source src="https://stream.mux.com/Lr009kWfiUM2020002mL7bq2xT8XO1b2grr7.m3u8" type='application/x-mpegURL'>
+												<source src="https://d31fuxj8mc858j.cloudfront.net/ajhs_wet.mp4" type='video/mp4'>
+										</video>
+								</div>
+								<!-- section-video-player -->
+								<div class="video-meta-info">
+										<div class="video-bottom-info">
+												<p class="video-title">Water Touch</p>
+										</div>
+								</div>
+						</div>
+						<div class="column">
+								<div class="section-video-player">
+										<video id="video-js-video-ajh3" class="video-js vjs-default-skin vjs-big-play-centered vjs-big-play-button" controls preload="auto" data-setup='{"fluid": true}' poster="https://d31fuxj8mc858j.cloudfront.net/ajhc_sam.jpg" width="1280px" height="720px">
+												<source src="https://stream.mux.com/cSOrEHocDI1P6ZdRuvflXSsDte8Q6RAB.m3u8" type='application/x-mpegURL'>
+												<source src="https://d31fuxj8mc858j.cloudfront.net/ajhc_sam.mp4" type='video/mp4'>
+										</video>
+								</div>
+								<!-- section-video-player -->
+								<div class="video-meta-info">
+										<div class="video-bottom-info">
+												<p class="video-title">Bungy Jumping in Australia</p>
+										</div>
+								</div>
+						</div>
+						<div class="column">
+								<div class="section-video-player">
+										<video id="video-js-video-ajh4" class="video-js vjs-default-skin vjs-big-play-centered vjs-big-play-button" controls preload="auto" data-setup='{"fluid": true}' poster="https://d31fuxj8mc858j.cloudfront.net/ajhc_tandem.jpg" width="1280px" height="720px">
+												<source src="https://stream.mux.com/Jc4EEex00itkx7dSE00IuICF3nqhqvbIgD.m3u8" type='application/x-mpegURL'>
+												<source src="https://d31fuxj8mc858j.cloudfront.net/ajhc_tandem.mp4" type='video/mp4'>
+										</video>
+								</div>
+								<!-- section-video-player -->
+								<div class="video-meta-info">
+										<div class="video-bottom-info">
+												<p class="video-title">Tandem Bungy</p>
+										</div>
+								</div>
+						</div>
+				</div>
+		</section>
+
+		<!-- Download Call To Action -->
+		<section class="get-started-cta">
+			<div class="container text-center justify-center">
+				<div class="column seven">
+					<h2>Ready to Shred?</h2>
+					<p>Start selling automatic, cinematic videos to your customers today. Sign up for a free demo now and see Shred Video work for you.</p>
+					<a class="button with-shred-logo with-arrow ios-app" href="/demo.html">Get a Demo</a>
+				</div>
+			</div>
+		</section>
+
+	</article>
+
+
+
+
+	<!-- The Footer -->
+	<footer role="contentinfo">
+		<div class="container">
+			<div class="column">
+				<ul class="footer-info">
+					<li>Copyright &copy; 2023 Shred Video, Inc. All Rights Reserved</li>
+					<li><a href="/privacy.html">Privacy Policy</a></li>
+					<li><a href="/terms.html">Terms of Use</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<ul class="footer-social">
+					<li class="facebook"><a href="https://www.facebook.com/ShredVideo/" target="_blank">Facebook</a></li>
+					<li class="twitter"><a href="https://www.twitter.com/shredvideo" target="_blank">Twitter</a></li>
+					<li class="instagram"><a href="https://www.instagram.com/shredvideo" target="_blank">Instagram</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+<script src="https://vjs.zencdn.net/6.6.3/video.js"></script>
+<script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+<!-- <script src="https://src.litix.io/videojs/2/videojs-mux.js"></script> -->
+<script src="/js/videojs-mux.js"></script>
+
+<script type="text/javascript">
+	var players = [];
+
+	$('.video-js').each(function(i) {
+		var playerId = $(this).attr('id');
+		var playerIndex = i;
+		var playerInitTime = Date.now();
+		var player = videojs(playerId, {
+			plugins: {
+				mux: {
+					debug: false,
+					data: {
+						property_key: 'ti8uhk5tc0rqng9s4fif5r8k3', // required
+						player_init_time: playerInitTime,
+						video_id: playerId,
+						video_producer: 'shred'
+					}
+				}
+			}
+		});
+		player.on("play", function(){
+			$.each(players, function(i) {
+				if (i !== playerIndex) {
+						players[i].pause();
+				}
+			});
+    });
+		players[i] = player;
+	});
+
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-71827606-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<!-- <script type="text/javascript">
+	function is_iOS() {
+
+		var iDevices = [
+		'iPad Simulator',
+		'iPhone Simulator',
+		'iPod Simulator',
+		'iPad',
+		'iPhone',
+		'iPod'
+		];
+
+		while (iDevices.length) {
+			if (navigator.platform === iDevices.pop()) { return true; }
+		}
+
+		return false;
+	}
+
+	function is_OSX() {
+		return navigator.platform.indexOf('Mac') > -1
+	}
+
+	$(window).load(function() {
+		$('a.ios-app').each(function() {
+			if ( is_iOS() ) {
+				$(this).attr('href', $(this).attr('data-ios'))
+			}
+		});
+	});
+</script> -->
+
+
+
+<script type="text/javascript">
+	$(window).load(function() {
+		if (navigator.appVersion.indexOf("MSIE 10") !== -1) {
+			$('body').addClass('ie10');
+		}
+	});
+</script>
+
+<script type="text/javascript">
+	$(window).load(function() {
+		if(navigator.userAgent.match(/Trident.*rv:11\./)) {
+			$('body').addClass('ie11');
+		}
+	});
+</script>
+
+</body>
+</html>
