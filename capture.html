@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	<title>shutter release test</title>
+	<style type="text/css">
+		body { background-color: #ffffff; color: #000000; }
+
+		#dragonfly {
+		  display: block;
+			vertical-align: middle;
+			margin: 0 auto;
+			width: 600px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="triggers">
+	</div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+<script>
+  function captures() {
+		firebase.database().ref('/').on('value', function(snapshot) {
+			var devices = snapshot.val();
+			console.log(devices);
+			var html = '';
+			if (devices) {
+				for (var d in devices) {
+					var t = devices[d];
+					html += '<p><h2>' + d + '</h2>Total recordings: ';
+					if (t) {
+						html += t.length + '</p>';
+						html += '<p>';
+						for (var i = 0; i < t.length; i++) {
+							html += t[i] + '<br>';
+						}
+						html += '</p>';
+					}
+					else {
+						html += 0 + '</p>';
+					}
+				}
+			}
+			document.getElementById('triggers').innerHTML = html;
+		});
+	}
+	var config = {
+    apiKey: "AIzaSyD-olCEANvWo0VyovdlmIBDQmjxqHbQP1c",
+    authDomain: "capturetest-320e8.firebaseapp.com",
+    databaseURL: "https://capturetest-320e8.firebaseio.com",
+    storageBucket: "capturetest-320e8.appspot.com",
+    messagingSenderId: "119086612557"
+  };
+  firebase.initializeApp(config);
+	captures();
+</script>
+
+</html>

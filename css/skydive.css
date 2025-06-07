@@ -1,0 +1,35 @@
+.black-box {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #000000;
+}
+
+.section-video-player {
+  max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+}
+
+.section-video-player .video-js .vjs-big-play-button {
+  font-size: 8em;
+}
+
+.get-started-cta {
+  background: #fff !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.get-started-cta h2 {
+  color: #19202A;
+}
+
+.get-started-cta p {
+  padding-bottom: 20px;
+  color: #000;
+}
+
+.section-video-player .video-js {
+  background-color: #000 !important;
+}
