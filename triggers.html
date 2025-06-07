@@ -1,0 +1,76 @@
+<html>
+
+<head>
+	<title>shutter release test</title>
+	<style type="text/css">
+		body { background-color: #ffffff; color: #000000; }
+
+		#dragonfly {
+		  display: block;
+			vertical-align: middle;
+			margin: 0 auto;
+			width: 600px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="triggers">
+	</div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+<script>
+  function triggers() {
+		firebase.database().ref('/triggers').on('value', function(snapshot) {
+			var devices = snapshot.val();
+			console.log(devices);
+			var html = '';
+			if (devices) {
+				for (var d in devices) {
+					var t = devices[d];
+					html += '<p><h2>' + d + '</h2>Total triggers: ';
+					if (t) {
+						html += t.length + '</p>';
+						html += '<p>';
+						for (var i = 0; i < t.length; i++) {
+							html += t[i] + '<br>';
+						}
+						html += '</p>';
+					}
+					else {
+						html += 0 + '</p>';
+					}
+				}
+			}
+			document.getElementById('triggers').innerHTML = html;
+		});
+	}
+  var config = {
+    apiKey: "AIzaSyDU9JLLTSE7fkWoRPlsIL7uYBJOZIio3TM",
+    authDomain: "shutterreleasetest.firebaseapp.com",
+    databaseURL: "https://shutterreleasetest.firebaseio.com",
+    storageBucket: "shutterreleasetest.appspot.com",
+    messagingSenderId: "1072182194083"
+  };
+  firebase.initializeApp(config);
+	firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+      console.log('logged in as: ' + user.uid);
+      triggers();
+    }
+    else {
+      console.log('siging in...');
+      firebase.auth().signInAnonymously().catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorCode + " : " + errorMessage);
+      });
+    }
+  });
+</script>
+
+</html>
